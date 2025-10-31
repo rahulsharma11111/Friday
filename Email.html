@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>
+Email
+</title>
+<script>
+ function Validate()
+ {
+ let email=document.getElementById("em").value;
+ let regex=/^[A-Za-z0-9.%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+ 
+ if(regex.test(email))
+ {
+ alert("Email ID is Validate");
+ }
+ else
+ {
+ alert("Email ID is Not Validate");
+ }
+ }
+</script>
+</head>
+<body>
+<form name="f1">
+Enter Email ID:-<input type="text" id="em" name="em"><br>
+<input type="button" onclick="Validate()" value="Check">
+</form>
+</body>
+</html>
